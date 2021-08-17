@@ -1,0 +1,499 @@
+main {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 3fr 5fr 3fr;
+	grid-template-rows: auto 1fr auto;
+	grid-gap: 1em;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+main > div {
+	/* height: 100vh; */
+	background: #eee;
+	padding: 1em;
+}
+
+.topLeft {
+	background: #ddd;
+}
+
+.topMid {
+	background: #eee;
+	display: grid;
+	align-content: center;
+}
+
+.topRight {
+	background: #ddd;
+	display: grid;
+	align-content: center;
+}
+
+/* .mainLeft {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: repeat(auto-fit, 20px);
+} */
+
+
+.mainBody {
+	background: #ddd;
+	grid-column: 1/4;
+	overflow: auto;
+}
+
+.bottomLeft {
+	background: #eee;
+	display: grid;
+	align-content: center;
+}
+
+.bottomMid {
+	background: #ddd;
+}
+
+.bottomRight {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr;
+	align-content: right;
+}
+
+.bottomRight-left {
+	background: #ddd;
+	justify-self: end;
+	align-self: center;
+}
+
+.bottomRight-right {
+	background: #ddd;
+	justify-self: end;
+	align-self: center;
+}
+
+.gallery {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(auto-fit, 150px);
+}
+
+.galleryItem {
+	display: grid;
+	grid-template-rows: 150px minmax(20px, 60px);
+	width: 150px;
+	border: 1px solid #333;
+	border-radius: 1rem;
+	overflow: clip;
+}
+
+.galleryItemIcon {
+	width: 150px;
+	height: 150px;
+}
+
+.galleryItemIcon img {
+	width: 150px;
+	height: 150px;
+}
+
+.galleryItemTxt {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	overflow: clip;
+	font-size: 12;
+}
+
+.roundGallery {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(auto-fit, 150px);
+}
+
+.roundGalleryItem {
+	display: grid;
+	grid-template-rows: 150px minmax(20px, 60px);
+	width: 150px;
+	border-radius: 1rem;
+	overflow: clip;
+}
+
+.roundGalleryItemIcon {
+	width: 150px;
+	height: 150px;
+}
+
+.roundGalleryItemIcon img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.roundGalleryItemTxt {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	overflow: clip;
+	font-size: 12;
+}
+
+.artistDetail {
+	height: 100%
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: minmax(1fr, auto) 1fr 1fr 1fr 1fr 1fr;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.artistTop {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr;
+}
+
+.artistIcon {
+	text-align: right;
+	align-self: end;
+}
+
+.artistItemIcon img {
+	border-radius: 1rem;
+	width: 200px;
+	height: 200px;
+	align-self: end;
+}
+
+.artistTitleArea {
+	align-self: center;
+}
+
+.artistTitle {
+	font-size: 24;
+	font-weight: bold;
+	align-self: end;
+}
+
+.genres {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(auto-fit, 150px);
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.genreText {
+	background-color: #ddd;
+	text-align: center;
+	border-radius: 1em;
+	border: 1px solid #333;
+	vertical-align: middle;
+}
+.artistDescription {
+	background: #eee;
+}
+
+.artistAlbums {
+	background: #eee;
+}
+
+.artistAlbumArea {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: minmax(30px, auto) 1fr;
+}
+
+.artistAlbumSection {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: repeat(30px, auto-fill);
+}
+
+.artistRelationshipArea {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: repeat(30px, auto-fill);
+}
+
+.artistRelationships {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: minmax(30px, auto) 1fr;
+}
+
+.albumDetail {
+	height: 100%
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: minmax(1fr, auto) 1fr 1fr 1fr 1fr 1fr;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.albumTop {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.albumIcon {
+	text-align: right;
+	align-self: end;
+}
+
+.albumItemIcon img {
+	border-radius: 1rem;
+	width: 200px;
+	height: 200px;
+	align-self: end;
+}
+
+.albumTitleArea {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.albumTitle {
+	font-size: 24;
+	font-weight: bold;
+	align-self: end;
+}
+
+.albumArtist {
+	font-size:20;
+}
+
+.albumArtist a {
+	text-decoration: none;
+}
+
+.isBooleans {
+	background: #eee;
+	text-align: center;
+}
+
+.albumReview {
+	background: #eee;
+}
+
+.albumTracksArea {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: minmax(30px, auto) 1fr;
+}
+
+.sectionHeading {
+	font-size: 20;
+	font-weight: bold;
+}
+
+.albumTracksSection {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: repeat(30px, auto-fill);
+}
+
+.albumTracksArea {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: repeat(30px);
+}
+
+.eachTracks {
+	background: #fff;
+	display: grid;
+	grid-column-gap: 1em;
+	grid-template-columns: auto 1fr;
+}
+
+.albumTracksDisc {
+	font-size: 18;
+	background: #fff;
+	align-self: end;
+	font-weight: bold;
+}
+
+.trackText {
+
+}
+
+
+.workListArea {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: minmax(30px, auto) 1fr;
+}
+
+.workListSection {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: repeat(30px, auto-fill);
+}
+
+.workText {
+
+}
+
+.boxsetDetail {
+	height: 100%
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: minmax(1fr, auto) 1fr;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.boxsetTop {
+	background: #eee;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr;
+}
+
+.boxsetIcon {
+	text-align: right;
+	align-self: end;
+}
+
+.boxsetItemIcon img {
+	border-radius: 1rem;
+	width: 200px;
+	height: 200px;
+	align-self: end;
+}
+
+.boxsetTitleArea {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.boxsetTitle {
+	font-size: 24;
+	font-weight: bold;
+	align-self: end;
+}
+
+.boxsetArtist {
+	font-size:20;
+}
+
+a#bioLink {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* TRANSPORT */
+
+.transportArea {
+	display: grid;
+	grid-template-rows: auto auto;
+}
+
+.controllerArea {
+	text-align: center;
+}
+
+input.seekSlider[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 90%;
+	height: 2px;
+	align-self: center;
+}
+
+.seekArea {
+	text-align: center;
+}
+
+/* VOLUME */
+.volumeArea {
+	display: grid;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+}
+
+input.volume[type=range] {
+	/* -webkit-appearance: slider-vertical; */
+	-webkit-appearance: none;
+	margin: 10px 0;
+  width: 90%;
+	height: 2px;
+	align-self: center;
+}
+
+/* PLAYNOW INFO */
+.nowPlayingArea {
+	height=100%;
+	background: #eee;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 70px auto;
+	align-self: center;
+}
+
+.nowPlayingIcon {
+}
+
+.nowPlayingItemIcon img {
+	width: 70px;
+	height: 70px;
+}
+
+.nowPlayingAlbumArtistArea {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.nowPlayingTitle {
+	font-size: 15;
+	font-weight: bold;
+	align-self: end;
+}
+
+.nowPlayingArtist {
+	font-size:12;
+}
+
+.playqueue {
+  border: none;
+  color: blue;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+	font-weight: bold;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.playqueue:hover {
+  /* background-color: #008CBA; */
+  /* color: white; */
+}
+
+.playqueue:disabled,
+.playqueue[disabled]{
+  color: grey;
+}
