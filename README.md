@@ -1,5 +1,31 @@
 # roon-extension-boxset
 
+## Box Set folder location.
+
+The extension assumes that box sets are part of an Artist with folder name **Box Sets**
+
+This means that we can have
+```
+Pink Floyd
+  Dark Side of the Moon
+  Box Sets
+    Pink Floyd - The Early Years
+      Pink Floyd - 1965 Their First Recordings
+        CD01
+        CD02
+      Pink Floyd - 1967-1972 Continu-ation
+      
+Various Artists
+  Box Sets
+    The Decca Sound - The Analogue Years
+      Georg Solti - Chicago Symphony Orchestra
+        Georg Solti - Chicago Symphony Orchestra - Bruckner Symphony No. 2
+        Georg Solti - Chicago Symphony Orchestra - Stravinsky Le Sacre Du Printemps - Ravel Bolero - Schoenberg Variations
+      Oivin Fjeldstad - Clifford Curzon - The London Symphony Orchestra
+        Oivin Fjeldstad - Clifford Curzon - The London Symphony Orchestra - Grieg Peer Gynt - Piano Concerto In A Minor
+    
+```
+
 ## Preparation:
 
 ```
