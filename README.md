@@ -9,29 +9,29 @@ Copy broker_2.db to roonDB directory
 ## Create sqlite Database
 
 ```
-cd roonApi
-touch library.sqlite
-cat createTables.sql | sqlite3 library.sqlite
+>cd roonApi
+>touch library.sqlite
+>cat createTables.sql | sqlite3 library.sqlite
 ```
 
 ## Install and run roon api extensions
 
 ```
-npm install
-node .
+>npm install
+>node .
 ```
 
 # Converting roon db
 
 ## preparing (in the main directory)
 ```
-npm install
+>npm install
 ```
 
 ## converting
 
 ```
-./importAndProcessData.sh
+>./importAndProcessData.sh
 ```
 
 The script above runs three scripts:
